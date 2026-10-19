@@ -1,41 +1,5 @@
 import React from "react";
 import profile from "../assets/profile.png";
-import ParticleText from "./ParticleText";
-
-const YELLOW = "#ffbd39";
-const WHITE = "#ffffff";
-
-// Particle text ki lines (component ke bahar rakhna zaroori hai)
-const HERO_LINES = [
-  {
-    size: 20,
-    weight: 600,
-    lh: 2.2,
-    spacing: "3px",
-    segments: [{ text: "HELLO!", color: YELLOW }],
-  },
-  {
-    size: 76,
-    weight: 700,
-    lh: 1.1,
-    segments: [
-      { text: "I'm ", color: WHITE },
-      { text: "Hammad", color: YELLOW },
-    ],
-  },
-  {
-    size: 76,
-    weight: 700,
-    lh: 1.1,
-    segments: [{ text: "Taufeeq", color: YELLOW }],
-  },
-  {
-    size: 32,
-    weight: 500,
-    lh: 2,
-    segments: [{ text: "Front End Developer", color: WHITE }],
-  },
-];
 
 function Home() {
   return (
@@ -48,18 +12,42 @@ function Home() {
         {/* Left Content */}
         <div className="w-full lg:w-[52%] pt-16 lg:pt-0 text-center lg:text-left z-10">
 
-          {/* Hello + Name + Profession (Particle Text) */}
-          <div
+          {/* Hello */}
+          <p
+            data-aos="fade-down"
+            data-aos-duration="2500"
+            data-aos-delay="100"
+            className="text-[#ffbd39] text-[16px] sm:text-[18px] font-semibold tracking-[3px] mb-6 mt-5"
+          >
+            HELLO!
+          </p>
+
+          {/* Heading */}
+          <h1
             data-aos="fade-right"
             data-aos-duration="2800"
             data-aos-delay="300"
-            className="w-full h-[300px] sm:h-[330px] lg:h-[350px]"
+            className="text-white text-[48px] sm:text-[60px] md:text-[68px] lg:text-[70px] xl:text-[76px] leading-[1.05] font-bold"
           >
-            <h1 className="sr-only">
-              Hello! I'm Hammad Taufeeq - Front End Developer
-            </h1>
-            <ParticleText lines={HERO_LINES} />
-          </div>
+            I'm{" "}
+            <span className="text-[#ffbd39]">
+              Hammad
+            </span>
+            <br />
+            <span className="text-[#ffbd39]">
+              Taufeeq
+            </span>
+          </h1>
+
+          {/* Profession */}
+          <p
+            data-aos="fade-right"
+            data-aos-duration="2800"
+            data-aos-delay="500"
+            className="mt-8 text-white text-[22px] sm:text-[26px] md:text-[30px] lg:text-[32px] font-medium"
+          >
+            Front End Developer
+          </p>
 
           {/* Buttons */}
           <div className="mt-9 flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
