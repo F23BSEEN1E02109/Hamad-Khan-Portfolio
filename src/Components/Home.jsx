@@ -120,38 +120,40 @@ function Home() {
         </div>
 
         {/* Right Profile Image */}
-        <div
-          data-aos="fade-left"
-          data-aos-duration="3000"
-          data-aos-delay="400"
-          className="w-full lg:w-[48%] h-[500px] sm:h-[600px] lg:h-[calc(100vh-75px)] flex items-end justify-center lg:justify-end mt-10 lg:mt-0 relative"
-        >
-          <img
-            src={profile}
-            alt="Hammad Taufeeq"
-            className="
-              h-[430px]
-              sm:h-[520px]
-              md:h-[600px]
-              lg:h-[700px]
-              xl:h-[760px]
-              w-auto
-              max-w-full
-              object-contain
-              object-bottom
-              rounded-2xl
-              border
-              border-white/10
-              shadow-[0_10px_30px_rgba(0,0,0,0.5)]
-              transition-all
-              duration-1000
-              ease-in-out
-              hover:border-[#ffbd39]/50
-              hover:scale-[1.01]
-              hover:shadow-[0_15px_40px_rgba(255,189,57,0.15)]
-            "
-          />
-        </div>
+<div
+  data-aos="fade-left"
+  data-aos-duration="3000"
+  data-aos-delay="400"
+  className="w-full lg:w-[48%] flex items-end justify-center lg:justify-end mt-10 lg:mt-0 relative lg:h-[calc(100vh-75px)]"
+>
+  <img
+    src={profile}
+    alt="Hammad Taufeeq"
+    className="
+      w-full
+      max-w-[380px]
+      sm:max-w-[460px]
+      md:max-w-[520px]
+      h-auto
+      lg:max-w-none
+      lg:w-auto
+      lg:h-auto
+      lg:max-h-full
+      object-contain
+      object-bottom
+      rounded-2xl
+      border
+      border-white/10
+      shadow-[0_10px_30px_rgba(0,0,0,0.5)]
+      transition-all
+      duration-1000
+      ease-in-out
+      hover:border-[#ffbd39]/50
+      hover:scale-[1.01]
+      hover:shadow-[0_15px_40px_rgba(255,189,57,0.15)]
+    "
+  />
+</div>
 
       </div>
     </section>

@@ -178,41 +178,36 @@ function Contact() {
           "
         >
 
-          {/* Left Column: Image */}
-          <div
-            data-aos="fade-right"
-            data-aos-delay="400"
-            className="
-              w-full
-              bg-[#141414]
-              flex
-              items-end
-              justify-center
-              pt-8
-              px-6
-              min-h-[450px]
-              lg:min-h-[550px]
-              overflow-hidden
-            "
-          >
-            <img
-              src={profile}
-              alt="Hammad Taufeeq"
-              className="
-                w-auto
-                h-[400px]
-                sm:h-[480px]
-                lg:h-[520px]
-                object-contain
-                object-bottom
-                rounded-2xl
-                transition-all
-                duration-500
-                hover:scale-[1.02]
-              "
-            />
-          </div>
-
+    {/* Left Column: Image */}
+<div
+  data-aos="fade-right"
+  data-aos-delay="400"
+  className="
+    relative
+    w-full
+    bg-[#141414]
+    overflow-hidden
+    lg:min-h-full
+  "
+>
+  <img
+    src={profile}
+    alt="Hammad Taufeeq"
+    className="
+      block
+      w-full
+      h-auto
+      lg:absolute
+      lg:inset-0
+      lg:h-full
+      object-cover
+      object-top
+      transition-transform
+      duration-500
+      hover:scale-[1.02]
+    "
+  />
+</div>
           {/* Right Column: Form Box */}
           <div
             data-aos="fade-left"
